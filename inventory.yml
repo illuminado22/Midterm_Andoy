@@ -1,0 +1,12 @@
+all:  
+  children: 
+    prometheus-ubuntu:
+      hosts:
+        ubuntu1:
+          ansible_user: server-1
+          ansible_host: 192.168.56.111
+
+    prometheus-server:
+      hosts:
+        ubuntu1:
+        centos1:
